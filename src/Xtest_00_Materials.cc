@@ -133,7 +133,7 @@ void test_00_Materials::CreateMaterials()
   //--------------------------------------------------
   // Polystyrene
   //--------------------------------------------------
- 
+
   elements.push_back("C");     natoms.push_back(8);
   elements.push_back("H");     natoms.push_back(8);
 
@@ -151,7 +151,7 @@ void test_00_Materials::CreateMaterials()
 
   elements.push_back("C");     natoms.push_back(2);
   elements.push_back("H");     natoms.push_back(6);
-  
+
   density = 1.060*g/cm3;
 
   fSilicone = fNistMan->
@@ -259,35 +259,14 @@ void test_00_Materials::CreateMaterials()
    0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00};
 
   assert(sizeof(emission) == sizeof(photonEnergy));
-  
-  G4double reflectivityIndextest[] =
-  { 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
-    1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
-    1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
-    1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
-    1., 1., 1., 1., 1., 1., 1., 1., 1., 1.};
-    
-  assert(sizeof(refractiveIndextest) == sizeof(photonEnergy));
-
-  G4double efficiency[] =
-  { 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
-    0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-    0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-    0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-    0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
-    
-  assert(sizeof(efficiency) == sizeof(photonEnergy));
 
   // Add entries into properties table
   G4MaterialPropertiesTable* mpttest = new G4MaterialPropertiesTable();
-  /*mpttest->
-           AddProperty("RINDEX",photonEnergy,refractiveIndextest,nEntries);
+  mpttest->AddProperty("RINDEX",photonEnergy,refractiveIndextest,nEntries);
   mpttest->AddProperty("WLSABSLENGTH",photonEnergy,abstest,nEntries);
   mpttest->AddProperty("WLSCOMPONENT",photonEnergy,emission,nEntries);
-  mpttest->AddConstProperty("WLSTIMECONSTANT", 0.5*ns);*/
-  mpttest->AddProperty("EFFICIENCY",photonEnergy,efficiency,nEntries);
-  mpttest->AddProperty("REFLECTIVIRY",photonEnergy,reflectivityIndextest,nEntries);
-           
+  mpttest->AddConstProperty("WLSTIMECONSTANT", 0.5*ns);
+
   fPMMA->SetMaterialPropertiesTable(mpttest);
 
   //--------------------------------------------------
@@ -400,7 +379,7 @@ void test_00_Materials::CreateMaterials()
   mptPolystyrene->AddConstProperty("SCINTILLATIONYIELD",10./keV);
   mptPolystyrene->AddConstProperty("RESOLUTIONSCALE",1.0);
   mptPolystyrene->AddConstProperty("FASTTIMECONSTANT", 10.*ns);
- 
+
   fPolystyrene->SetMaterialPropertiesTable(mptPolystyrene);
 
   // Set the Birks Constant for the Polystyrene scintillator

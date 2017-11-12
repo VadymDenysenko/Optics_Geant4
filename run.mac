@@ -9,7 +9,7 @@
 /gps/direction 0. 0.01 -1.
 
 /gps/polarization 0. 0. 1.
-/gps/ene/mono 2. eV
+/gps/ene/mono 4. eV
 
 /run/beamOn 1
 

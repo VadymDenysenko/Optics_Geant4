@@ -9,9 +9,6 @@
 #include "G4VUserDetectorConstruction.hh"
 #include "G4GDMLParser.hh"
 
-class test_00_Materials;
-class G4Material;
-
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 class test_00_DetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -20,10 +17,8 @@ class test_00_DetectorConstruction : public G4VUserDetectorConstruction
     virtual ~test_00_DetectorConstruction();
     virtual G4VPhysicalVolume* Construct();
     virtual void ConstructSDandField();
-    G4Material* FindMaterial(G4String);
 
   private:
-    test_00_Materials* fMaterials;
     G4GDMLParser fParser;
     G4String fReadFile;
     G4VSolid* GDML;
