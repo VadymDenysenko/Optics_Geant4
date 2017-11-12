@@ -1,0 +1,29 @@
+# Use this open statement to create an OpenGL view:
+/vis/open OGL 600x600-0+0
+
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+/vis/drawVolume
+/vis/geometry/set/visibility World 0 false
+
+/vis/viewer/set/viewpointThetaPhi 60. 0.
+/vis/viewer/zoom 1.5
+
+/vis/viewer/set/style s
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton blue
+/vis/modeling/trajectories/drawByParticleID-0/set e- red
+
+/vis/scene/endOfEventAction accumulate
+
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+
+
