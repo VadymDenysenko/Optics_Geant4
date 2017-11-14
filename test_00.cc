@@ -28,9 +28,8 @@ namespace {
 
 int main(int argc,char** argv)
 {
-  // Evaluate arguments
-  //
-  if ( argc > 9 ) {
+  if ( argc > 9 )
+  {
     PrintUsage();
     return 1;
   }
@@ -39,11 +38,18 @@ int main(int argc,char** argv)
   G4String session;
 
   G4long myseed = 345354;
-  for ( G4int i=1; i<argc; i=i+2 ) {
-     if      ( G4String(argv[i]) == "-m" ) macro   = argv[i+1];
-     else if ( G4String(argv[i]) == "-u" ) session = argv[i+1];
-     else if ( G4String(argv[i]) == "-r" ) myseed  = atoi(argv[i+1]);
-    else {
+  for(G4int i=1; i<argc; i=i+2 )
+  {
+    if(G4String(argv[i]) == "-m")
+      macro = argv[i+1];
+    else
+    if(G4String(argv[i]) == "-u")
+      session = argv[i+1];
+    else
+    if(G4String(argv[i]) == "-r")
+      myseed = atoi(argv[i+1]);
+    else
+    {
       PrintUsage();
       return 1;
     }
@@ -67,11 +73,12 @@ int main(int argc,char** argv)
   // Set mandatory initialization classes
   //
   // Detector construction
-  runManager-> SetUserInitialization(new test_00_DetectorConstruction());
+  test_00_DetectorConstruction* detector = new test_00_DetectorConstruction();
+  runManager->SetUserInitialization(detector);
   // Physics list
   runManager->SetUserInitialization(new test_00_PhysicsList(physName));
   // User action initialization
-  runManager->SetUserInitialization(new test_00_ActionInitialization());
+  runManager->SetUserInitialization(new test_00_ActionInitialization(detector));
 
   // Initialize G4 kernel
   //
@@ -88,9 +95,10 @@ int main(int argc,char** argv)
 
   // Get the pointer to the User Interface manager
   //
-  G4UImanager* UImanager = G4UImanager::GetUIpointer(); 
-   
-  if ( macro.size() ) {
+  G4UImanager* UImanager = G4UImanager::GetUIpointer();
+
+  if(macro.size())
+  {
      // Batch mode
      G4String command = "/control/execute ";
      UImanager->ApplyCommand(command+macro);
@@ -102,7 +110,7 @@ int main(int argc,char** argv)
 #ifdef G4VIS_USE
      UImanager->ApplyCommand("/control/execute vis.mac");
 #endif
-     if (ui->IsGUI())
+     if(ui->IsGUI())
         UImanager->ApplyCommand("/control/execute gui.mac");
      ui->SessionStart();
      delete ui;

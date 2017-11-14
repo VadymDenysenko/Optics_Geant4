@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v/SHiP/test/test_01
+CMAKE_SOURCE_DIR = /home/v/SHiP/test/test_00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v/SHiP/test/test_01/build
+CMAKE_BINARY_DIR = /home/v/SHiP/test/test_00/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_00.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/test_00.dir/flags.make
 
 CMakeFiles/test_00.dir/test_00.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/test_00.cc.o: ../test_00.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_00.dir/test_00.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/test_00.cc.o -c /home/v/SHiP/test/test_01/test_00.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_00.dir/test_00.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/test_00.cc.o -c /home/v/SHiP/test/test_00/test_00.cc
 
 CMakeFiles/test_00.dir/test_00.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/test_00.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/test_00.cc > CMakeFiles/test_00.dir/test_00.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/test_00.cc > CMakeFiles/test_00.dir/test_00.cc.i
 
 CMakeFiles/test_00.dir/test_00.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/test_00.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/test_00.cc -o CMakeFiles/test_00.dir/test_00.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/test_00.cc -o CMakeFiles/test_00.dir/test_00.cc.s
 
 CMakeFiles/test_00.dir/test_00.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/test_00.dir/test_00.cc.o.provides.build: CMakeFiles/test_00.dir/test_
 
 CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o: ../src/test_00_ActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o -c /home/v/SHiP/test/test_01/src/test_00_ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o -c /home/v/SHiP/test/test_00/src/test_00_ActionInitialization.cc
 
 CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_ActionInitialization.cc > CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_ActionInitialization.cc > CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_ActionInitialization.cc -o CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_ActionInitialization.cc -o CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o.provides.build: CMa
 
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o: ../src/test_00_DetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o -c /home/v/SHiP/test/test_01/src/test_00_DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o -c /home/v/SHiP/test/test_00/src/test_00_DetectorConstruction.cc
 
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_DetectorConstruction.cc > CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_DetectorConstruction.cc > CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_DetectorConstruction.cc -o CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_DetectorConstruction.cc -o CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o.requires:
 
@@ -129,42 +129,18 @@ CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o.provides: CMakeFile
 CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o
 
 
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.o: CMakeFiles/test_00.dir/flags.make
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.o: ../src/test_00_Materials.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_00.dir/src/test_00_Materials.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_Materials.cc.o -c /home/v/SHiP/test/test_01/src/test_00_Materials.cc
-
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_Materials.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_Materials.cc > CMakeFiles/test_00.dir/src/test_00_Materials.cc.i
-
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_Materials.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_Materials.cc -o CMakeFiles/test_00.dir/src/test_00_Materials.cc.s
-
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.requires:
-
-.PHONY : CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.requires
-
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.provides: CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.requires
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.provides.build
-.PHONY : CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.provides
-
-CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_Materials.cc.o
-
-
 CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o: ../src/test_00_OpticalPhysics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o -c /home/v/SHiP/test/test_01/src/test_00_OpticalPhysics.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o -c /home/v/SHiP/test/test_00/src/test_00_OpticalPhysics.cc
 
 CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_OpticalPhysics.cc > CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_OpticalPhysics.cc > CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_OpticalPhysics.cc -o CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_OpticalPhysics.cc -o CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o.requires:
 
@@ -179,16 +155,16 @@ CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o.provides.build: CMakeFile
 
 CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o: ../src/test_00_PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o -c /home/v/SHiP/test/test_01/src/test_00_PhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o -c /home/v/SHiP/test/test_00/src/test_00_PhysicsList.cc
 
 CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_PhysicsList.cc > CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_PhysicsList.cc > CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_PhysicsList.cc -o CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_PhysicsList.cc -o CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o.requires:
 
@@ -203,16 +179,16 @@ CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o.provides.build: CMakeFiles/t
 
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o: ../src/test_00_PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o -c /home/v/SHiP/test/test_01/src/test_00_PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o -c /home/v/SHiP/test/test_00/src/test_00_PrimaryGeneratorAction.cc
 
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_PrimaryGeneratorAction.cc > CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_PrimaryGeneratorAction.cc > CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_PrimaryGeneratorAction.cc -o CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_PrimaryGeneratorAction.cc -o CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o.requires:
 
@@ -225,42 +201,42 @@ CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o.provides: CMakeFi
 CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o
 
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o: CMakeFiles/test_00.dir/flags.make
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o: ../src/test_00_SensitiveDetector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o -c /home/v/SHiP/test/test_01/src/test_00_SensitiveDetector.cc
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o: CMakeFiles/test_00.dir/flags.make
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o: ../src/test_00_RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o -c /home/v/SHiP/test/test_00/src/test_00_RunAction.cc
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_SensitiveDetector.cc > CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.i
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_RunAction.cc.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_RunAction.cc > CMakeFiles/test_00.dir/src/test_00_RunAction.cc.i
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_SensitiveDetector.cc -o CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.s
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_RunAction.cc.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_RunAction.cc -o CMakeFiles/test_00.dir/src/test_00_RunAction.cc.s
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.requires:
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.requires:
 
-.PHONY : CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.requires
+.PHONY : CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.requires
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.provides: CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.requires
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.provides.build
-.PHONY : CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.provides
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.provides: CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.provides.build
+.PHONY : CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.provides
 
-CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o
+CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o
 
 
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o: CMakeFiles/test_00.dir/flags.make
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o: ../src/test_00_StepMax.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o"
-	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o -c /home/v/SHiP/test/test_01/src/test_00_StepMax.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o -c /home/v/SHiP/test/test_00/src/test_00_StepMax.cc
 
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_StepMax.cc.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_01/src/test_00_StepMax.cc > CMakeFiles/test_00.dir/src/test_00_StepMax.cc.i
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_StepMax.cc > CMakeFiles/test_00.dir/src/test_00_StepMax.cc.i
 
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_StepMax.cc.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_01/src/test_00_StepMax.cc -o CMakeFiles/test_00.dir/src/test_00_StepMax.cc.s
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_StepMax.cc -o CMakeFiles/test_00.dir/src/test_00_StepMax.cc.s
 
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o.requires:
 
@@ -273,17 +249,41 @@ CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o.provides: CMakeFiles/test_00.dir
 CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o
 
 
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o: CMakeFiles/test_00.dir/flags.make
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o: ../src/test_00_SteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o"
+	/usr/lib64/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o -c /home/v/SHiP/test/test_00/src/test_00_SteppingAction.cc
+
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v/SHiP/test/test_00/src/test_00_SteppingAction.cc > CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.i
+
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v/SHiP/test/test_00/src/test_00_SteppingAction.cc -o CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.s
+
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.requires:
+
+.PHONY : CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.requires
+
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.provides: CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.provides.build
+.PHONY : CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.provides
+
+CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.provides.build: CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o
+
+
 # Object files for target test_00
 test_00_OBJECTS = \
 "CMakeFiles/test_00.dir/test_00.cc.o" \
 "CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o" \
 "CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o" \
-"CMakeFiles/test_00.dir/src/test_00_Materials.cc.o" \
 "CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o" \
 "CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o" \
 "CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o" \
-"CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o" \
-"CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o"
+"CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o" \
+"CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o" \
+"CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o"
 
 # External object files for target test_00
 test_00_EXTERNAL_OBJECTS =
@@ -291,12 +291,12 @@ test_00_EXTERNAL_OBJECTS =
 test_00: CMakeFiles/test_00.dir/test_00.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o
-test_00: CMakeFiles/test_00.dir/src/test_00_Materials.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o
-test_00: CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o
+test_00: CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o
 test_00: CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o
+test_00: CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o
 test_00: CMakeFiles/test_00.dir/build.make
 test_00: /home/v/Programs/geant4/geant4-install/lib64/libG4Tree.so
 test_00: /home/v/Programs/geant4/geant4-install/lib64/libG4GMocren.so
@@ -346,7 +346,7 @@ test_00: /home/v/Programs/geant4/geant4-install/lib64/libG4intercoms.so
 test_00: /home/v/Programs/geant4/geant4-install/lib64/libG4global.so
 test_00: /home/v/Programs/geant4/geant4-install/lib64/libG4clhep.so
 test_00: CMakeFiles/test_00.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v/SHiP/test/test_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable test_00"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v/SHiP/test/test_00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable test_00"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_00.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -357,12 +357,12 @@ CMakeFiles/test_00.dir/build: test_00
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/test_00.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_ActionInitialization.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.o.requires
-CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_Materials.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_OpticalPhysics.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_PhysicsList.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.o.requires
-CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o.requires
+CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o.requires
 CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_StepMax.cc.o.requires
+CMakeFiles/test_00.dir/requires: CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o.requires
 
 .PHONY : CMakeFiles/test_00.dir/requires
 
@@ -371,6 +371,6 @@ CMakeFiles/test_00.dir/clean:
 .PHONY : CMakeFiles/test_00.dir/clean
 
 CMakeFiles/test_00.dir/depend:
-	cd /home/v/SHiP/test/test_01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v/SHiP/test/test_01 /home/v/SHiP/test/test_01 /home/v/SHiP/test/test_01/build /home/v/SHiP/test/test_01/build /home/v/SHiP/test/test_01/build/CMakeFiles/test_00.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v/SHiP/test/test_00/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v/SHiP/test/test_00 /home/v/SHiP/test/test_00 /home/v/SHiP/test/test_00/build /home/v/SHiP/test/test_00/build /home/v/SHiP/test/test_00/build/CMakeFiles/test_00.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_00.dir/depend
 

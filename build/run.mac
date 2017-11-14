@@ -2,14 +2,14 @@
 
 /gps/pos/type Plane
 /gps/pos/shape Annulus
-/gps/pos/centre 0. 0. 32.49999 mm
-/gps/pos/radius 29.9 mm
-/gps/pos/inner_radius 26.1 mm
+/gps/pos/centre 0. 0. 32. mm
+/gps/pos/radius 29.95 mm
+/gps/pos/inner_radius 26.05 mm
 
-/gps/direction 0. 0.01 -1.
+/gps/direction 0. 0. -1.
 
 /gps/polarization 0. 0. 1.
-/gps/ene/mono 2. eV
+/gps/ene/mono 4. eV
 
-/run/beamOn 1
+/run/beamOn 100000
 

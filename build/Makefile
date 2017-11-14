@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v/SHiP/test/test_01
+CMAKE_SOURCE_DIR = /home/v/SHiP/test/test_00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v/SHiP/test/test_01/build
+CMAKE_BINARY_DIR = /home/v/SHiP/test/test_00/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v/SHiP/test/test_01/build/CMakeFiles /home/v/SHiP/test/test_01/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v/SHiP/test/test_00/build/CMakeFiles /home/v/SHiP/test/test_00/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v/SHiP/test/test_01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v/SHiP/test/test_00/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,33 +223,6 @@ src/test_00_DetectorConstruction.cc.s:
 	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_DetectorConstruction.cc.s
 .PHONY : src/test_00_DetectorConstruction.cc.s
 
-src/test_00_Materials.o: src/test_00_Materials.cc.o
-
-.PHONY : src/test_00_Materials.o
-
-# target to build an object file
-src/test_00_Materials.cc.o:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_Materials.cc.o
-.PHONY : src/test_00_Materials.cc.o
-
-src/test_00_Materials.i: src/test_00_Materials.cc.i
-
-.PHONY : src/test_00_Materials.i
-
-# target to preprocess a source file
-src/test_00_Materials.cc.i:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_Materials.cc.i
-.PHONY : src/test_00_Materials.cc.i
-
-src/test_00_Materials.s: src/test_00_Materials.cc.s
-
-.PHONY : src/test_00_Materials.s
-
-# target to generate assembly for a file
-src/test_00_Materials.cc.s:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_Materials.cc.s
-.PHONY : src/test_00_Materials.cc.s
-
 src/test_00_OpticalPhysics.o: src/test_00_OpticalPhysics.cc.o
 
 .PHONY : src/test_00_OpticalPhysics.o
@@ -331,32 +304,32 @@ src/test_00_PrimaryGeneratorAction.cc.s:
 	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_PrimaryGeneratorAction.cc.s
 .PHONY : src/test_00_PrimaryGeneratorAction.cc.s
 
-src/test_00_SensitiveDetector.o: src/test_00_SensitiveDetector.cc.o
+src/test_00_RunAction.o: src/test_00_RunAction.cc.o
 
-.PHONY : src/test_00_SensitiveDetector.o
+.PHONY : src/test_00_RunAction.o
 
 # target to build an object file
-src/test_00_SensitiveDetector.cc.o:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.o
-.PHONY : src/test_00_SensitiveDetector.cc.o
+src/test_00_RunAction.cc.o:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_RunAction.cc.o
+.PHONY : src/test_00_RunAction.cc.o
 
-src/test_00_SensitiveDetector.i: src/test_00_SensitiveDetector.cc.i
+src/test_00_RunAction.i: src/test_00_RunAction.cc.i
 
-.PHONY : src/test_00_SensitiveDetector.i
+.PHONY : src/test_00_RunAction.i
 
 # target to preprocess a source file
-src/test_00_SensitiveDetector.cc.i:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.i
-.PHONY : src/test_00_SensitiveDetector.cc.i
+src/test_00_RunAction.cc.i:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_RunAction.cc.i
+.PHONY : src/test_00_RunAction.cc.i
 
-src/test_00_SensitiveDetector.s: src/test_00_SensitiveDetector.cc.s
+src/test_00_RunAction.s: src/test_00_RunAction.cc.s
 
-.PHONY : src/test_00_SensitiveDetector.s
+.PHONY : src/test_00_RunAction.s
 
 # target to generate assembly for a file
-src/test_00_SensitiveDetector.cc.s:
-	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SensitiveDetector.cc.s
-.PHONY : src/test_00_SensitiveDetector.cc.s
+src/test_00_RunAction.cc.s:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_RunAction.cc.s
+.PHONY : src/test_00_RunAction.cc.s
 
 src/test_00_StepMax.o: src/test_00_StepMax.cc.o
 
@@ -384,6 +357,33 @@ src/test_00_StepMax.s: src/test_00_StepMax.cc.s
 src/test_00_StepMax.cc.s:
 	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_StepMax.cc.s
 .PHONY : src/test_00_StepMax.cc.s
+
+src/test_00_SteppingAction.o: src/test_00_SteppingAction.cc.o
+
+.PHONY : src/test_00_SteppingAction.o
+
+# target to build an object file
+src/test_00_SteppingAction.cc.o:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.o
+.PHONY : src/test_00_SteppingAction.cc.o
+
+src/test_00_SteppingAction.i: src/test_00_SteppingAction.cc.i
+
+.PHONY : src/test_00_SteppingAction.i
+
+# target to preprocess a source file
+src/test_00_SteppingAction.cc.i:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.i
+.PHONY : src/test_00_SteppingAction.cc.i
+
+src/test_00_SteppingAction.s: src/test_00_SteppingAction.cc.s
+
+.PHONY : src/test_00_SteppingAction.s
+
+# target to generate assembly for a file
+src/test_00_SteppingAction.cc.s:
+	$(MAKE) -f CMakeFiles/test_00.dir/build.make CMakeFiles/test_00.dir/src/test_00_SteppingAction.cc.s
+.PHONY : src/test_00_SteppingAction.cc.s
 
 test_00.o: test_00.cc.o
 
@@ -431,9 +431,6 @@ help:
 	@echo "... src/test_00_DetectorConstruction.o"
 	@echo "... src/test_00_DetectorConstruction.i"
 	@echo "... src/test_00_DetectorConstruction.s"
-	@echo "... src/test_00_Materials.o"
-	@echo "... src/test_00_Materials.i"
-	@echo "... src/test_00_Materials.s"
 	@echo "... src/test_00_OpticalPhysics.o"
 	@echo "... src/test_00_OpticalPhysics.i"
 	@echo "... src/test_00_OpticalPhysics.s"
@@ -443,12 +440,15 @@ help:
 	@echo "... src/test_00_PrimaryGeneratorAction.o"
 	@echo "... src/test_00_PrimaryGeneratorAction.i"
 	@echo "... src/test_00_PrimaryGeneratorAction.s"
-	@echo "... src/test_00_SensitiveDetector.o"
-	@echo "... src/test_00_SensitiveDetector.i"
-	@echo "... src/test_00_SensitiveDetector.s"
+	@echo "... src/test_00_RunAction.o"
+	@echo "... src/test_00_RunAction.i"
+	@echo "... src/test_00_RunAction.s"
 	@echo "... src/test_00_StepMax.o"
 	@echo "... src/test_00_StepMax.i"
 	@echo "... src/test_00_StepMax.s"
+	@echo "... src/test_00_SteppingAction.o"
+	@echo "... src/test_00_SteppingAction.i"
+	@echo "... src/test_00_SteppingAction.s"
 	@echo "... test_00.o"
 	@echo "... test_00.i"
 	@echo "... test_00.s"

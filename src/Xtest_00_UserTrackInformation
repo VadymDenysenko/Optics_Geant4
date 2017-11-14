@@ -1,0 +1,77 @@
+/// \file test_00_UserTrackInformation.cc
+/// \brief Implementation of the test_00_UserTrackInformation class
+//
+//
+#include "G4ios.hh"
+#include "G4ThreeVector.hh"
+
+#include "test_00_UserTrackInformation.hh"
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+test_00_UserTrackInformation::test_00_UserTrackInformation()
+{
+   fStatus = undefined;
+   fExitPosition = G4ThreeVector(0.,0.,0.);
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+test_00_UserTrackInformation::~test_00_UserTrackInformation()
+{
+
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+G4bool test_00_UserTrackInformation::AddStatusFlag(TrackStatus s)
+// Try adding a status flag and return if it is successful or not
+// Cannot Add Undefine or a flag that conflicts with another flag
+// Return true if the addition of flag is successful, false otherwise
+{
+   switch(s)
+   {
+
+      case left:
+      case right:
+
+        // Allow the user to set left or right
+        // only if the track is undefined
+        if(fStatus == undefined)
+          return fStatus |= s;
+
+        return false;
+
+      case EscapedFromSide:
+      case EscapedFromReadOut:
+
+        // Allow the user to set escaped flag
+        // only if the photon hasn't exited the fiber yet
+
+        if((fStatus == undefined) || (fStatus & OutsideOfVolume))
+          return false;
+
+        return fStatus |= s;
+
+      case ReflectedAtMirror:
+      case ReflectedAtReadOut:
+      case murderee:
+
+        return fStatus |= s;
+
+      case InsideOfVolume:
+
+        return (fStatus =
+         (fStatus & ~(EscapedFromSide +
+                      EscapedFromReadOut +
+                      OutsideOfVolume)) | s);
+
+      case OutsideOfVolume:
+
+        return (fStatus = (fStatus & ~InsideOfVolume) | s );
+
+      default:
+
+        return false;
+   }
+}

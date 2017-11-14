@@ -8,6 +8,7 @@
 #include "globals.hh"
 #include "G4VUserDetectorConstruction.hh"
 #include "G4GDMLParser.hh"
+#include "G4Cache.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 class test_00_DetectorConstruction : public G4VUserDetectorConstruction
@@ -16,7 +17,7 @@ class test_00_DetectorConstruction : public G4VUserDetectorConstruction
     test_00_DetectorConstruction();
     virtual ~test_00_DetectorConstruction();
     virtual G4VPhysicalVolume* Construct();
-    virtual void ConstructSDandField();
+
 
   private:
     G4GDMLParser fParser;

@@ -5,7 +5,7 @@
 /vis/verbose errors
 
 /vis/drawVolume
-/vis/geometry/set/visibility World 0 false
+/vis/geometry/set/visibility WorldLV 0 false
 
 /vis/viewer/set/viewpointThetaPhi 60. 0.
 /vis/viewer/zoom 1.5
@@ -19,7 +19,6 @@
 
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/modeling/trajectories/drawByParticleID-0/set opticalphoton blue
-/vis/modeling/trajectories/drawByParticleID-0/set e- red
 
 /vis/scene/endOfEventAction accumulate
 
